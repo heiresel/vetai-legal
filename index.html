@@ -1,155 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vet-AI — Legal</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F8FAF8; color: #212121; }
-header { background: #1B5E20; padding: 20px 24px; display: flex; align-items: center; gap: 12px; }
-header h1 { color: white; font-size: 22px; font-weight: 700; }
-header span { font-size: 28px; }
-nav { background: white; border-bottom: 1px solid #E0E0E0; padding: 0 24px; display: flex; gap: 24px; }
-nav a { display: block; padding: 14px 0; font-size: 14px; font-weight: 600; color: #757575; text-decoration: none; border-bottom: 3px solid transparent; }
-nav a.active { color: #1B5E20; border-bottom-color: #1B5E20; }
-.container { max-width: 800px; margin: 0 auto; padding: 32px 24px; }
-h2 { font-size: 24px; font-weight: 700; color: #1B5E20; margin-bottom: 8px; }
-.subtitle { font-size: 13px; color: #757575; margin-bottom: 32px; }
-h3 { font-size: 16px; font-weight: 700; color: #212121; margin: 24px 0 8px; }
-p { font-size: 14px; line-height: 1.8; color: #424242; margin-bottom: 12px; }
-ul { padding-left: 20px; margin-bottom: 12px; }
-ul li { font-size: 14px; line-height: 1.8; color: #424242; margin-bottom: 4px; }
-.warning { background: #FFF8E1; border-left: 4px solid #FFD600; border-radius: 4px; padding: 14px 16px; margin: 20px 0; }
-.warning p { margin: 0; font-size: 13px; color: #F57F17; }
-footer { background: #1B5E20; color: rgba(255,255,255,0.7); text-align: center; padding: 20px; font-size: 12px; margin-top: 48px; }
-.section { display: none; }
-.section.active { display: block; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vet-AI — Política de Privacidad / Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8faf8;
+      color: #212121;
+      line-height: 1.7;
+      padding: 0;
+    }
+    .lang-switcher {
+      background: #1B5E20;
+      text-align: center;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .lang-switcher a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+    .lang-switcher a:hover { opacity: 1; }
+    .section-divider {
+      border: none;
+      border-top: 3px solid #00E676;
+      margin: 48px 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1B5E20;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #757575;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #1B5E20;
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 13px;
+      color: #9E9E9E;
+      margin-bottom: 28px;
+    }
+    .warning-box {
+      background: #FFFDE7;
+      border-left: 4px solid #FFD600;
+      padding: 14px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #5D4037;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: bold;
+      color: #1B5E20;
+      margin: 28px 0 10px;
+    }
+    p { font-size: 15px; margin-bottom: 12px; }
+    ul {
+      margin: 8px 0 12px 20px;
+      font-size: 15px;
+    }
+    ul li { margin-bottom: 4px; }
+    a { color: #1B5E20; }
+    .sentry-box {
+      background: #E8F5E9;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 12px;
+    }
+    .sentry-box h3 {
+      font-size: 15px;
+      font-weight: bold;
+      color: #1B5E20;
+      margin-bottom: 10px;
+    }
+    .sentry-box p, .sentry-box ul {
+      font-size: 14px;
+      color: #333;
+    }
+    .contact-box {
+      background: #E8F5E9;
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: 15px;
+      margin-top: 12px;
+    }
+    .contact-box a { font-weight: 600; }
+  </style>
 </head>
 <body>
 
-<header>
-  <span>🦎</span>
-  <h1>Vet-AI — Legal</h1>
-</header>
-
-<nav>
-  <a href="#" class="active" onclick="return show('privacy', this)">Política de Privacidad</a>
-  <a href="#" onclick="return show('terms', this)">Términos y Condiciones</a>
-</nav>
-
-<div class="container">
-
-  <!-- PRIVACIDAD -->
-  <div id="privacy" class="section active">
-    <h2>Política de Privacidad</h2>
-    <p class="subtitle">Última actualización: Abril 2026</p>
-
-    <div class="warning">
-      <p>⚠️ Los análisis de Vet-AI son orientativos y no reemplazan el diagnóstico de un veterinario profesional habilitado.</p>
-    </div>
-
-    <h3>1. Responsable del tratamiento</h3>
-    <p>Vet-AI es una aplicación desarrollada de forma independiente. Para consultas sobre privacidad contactá a: <strong>vetai.soporte@gmail.com</strong></p>
-
-    <h3>2. Datos que recopilamos</h3>
-    <p>Vet-AI almacena los siguientes datos <strong>localmente en tu dispositivo</strong>:</p>
-    <ul>
-      <li>Nombre y datos de tus mascotas (especie, edad, peso, notas)</li>
-      <li>Fotos de perfil de tus mascotas</li>
-      <li>Historial de análisis realizados</li>
-      <li>Configuración de notificaciones</li>
-      <li>Estado de suscripción Pro</li>
-    </ul>
-    <p><strong>No recopilamos ni almacenamos datos personales del usuario</strong> (nombre, email, teléfono) en nuestros servidores.</p>
-
-    <h3>3. Imágenes enviadas para análisis</h3>
-    <p>Las imágenes que enviás para análisis son procesadas por la API de Groq (Meta Llama 4). Estas imágenes son transmitidas de forma segura mediante HTTPS y no son almacenadas por Vet-AI en ningún servidor propio.</p>
-    <p>Para conocer la política de privacidad de Groq, visitá: <a href="https://groq.com/privacy-policy" target="_blank">groq.com/privacy-policy</a></p>
-
-    <h3>4. Almacenamiento local</h3>
-    <p>Todos tus datos (mascotas, historial, configuración) se almacenan exclusivamente en el almacenamiento local de tu dispositivo usando SQLite y AsyncStorage. Si desinstalás la app, todos los datos serán eliminados permanentemente.</p>
-
-    <h3>5. Notificaciones</h3>
-    <p>Si habilitás los recordatorios, la app solicita permiso para enviar notificaciones locales a tu dispositivo. No enviamos notificaciones push remotas.</p>
-
-    <h3>6. Suscripción Pro</h3>
-    <p>Los pagos de la suscripción Pro son procesados por Google Play. Vet-AI no accede ni almacena datos de tarjetas de crédito u otros métodos de pago.</p>
-
-    <h3>7. Publicidad</h3>
-    <p>Vet-AI no muestra publicidad ni comparte datos con redes publicitarias.</p>
-
-    <h3>8. Menores de edad</h3>
-    <p>Vet-AI no está dirigida a menores de 13 años. No recopilamos conscientemente datos de menores.</p>
-
-    <h3>9. Cambios en esta política</h3>
-    <p>Podemos actualizar esta política ocasionalmente. Te notificaremos sobre cambios significativos mediante una actualización de la app.</p>
-
-    <h3>10. Contacto</h3>
-    <p>Para cualquier consulta sobre privacidad escribinos a: <strong>vetai.soporte@gmail.com</strong></p>
-  </div>
-
-  <!-- TÉRMINOS -->
-  <div id="terms" class="section">
-    <h2>Términos y Condiciones de Uso</h2>
-    <p class="subtitle">Última actualización: Abril 2026</p>
-
-    <h3>1. Aceptación</h3>
-    <p>Al descargar, instalar o usar Vet-AI aceptás estos términos en su totalidad. Si no estás de acuerdo, no uses la aplicación.</p>
-
-    <h3>2. Naturaleza del servicio</h3>
-    <p>Vet-AI es una herramienta de apoyo informativo basada en inteligencia artificial. Los análisis generados <strong>POR NINGÚN MOTIVO</strong> reemplazan, sustituyen ni equivalen al diagnóstico, tratamiento o consejo de un veterinario profesional habilitado.</p>
-    <p>La IA puede cometer errores. Los resultados son orientativos y están sujetos a limitaciones tecnológicas. Ante cualquier signo de enfermedad en tu mascota, consultá inmediatamente a un veterinario especializado en animales exóticos.</p>
-
-    <h3>3. Limitación de responsabilidad</h3>
-    <p>Vet-AI, sus desarrolladores y colaboradores NO se responsabilizan por:</p>
-    <ul>
-      <li>Decisiones tomadas basándose exclusivamente en los análisis de la app</li>
-      <li>Daños, lesiones o muerte de animales relacionados con el uso de la app</li>
-      <li>Errores, inexactitudes o limitaciones en los análisis de IA</li>
-      <li>Pérdida de datos por desinstalación o fallas del dispositivo</li>
-    </ul>
-
-    <h3>4. Uso aceptable</h3>
-    <p>El usuario se compromete a:</p>
-    <ul>
-      <li>Usar la app únicamente para el cuidado de animales exóticos de su propiedad o bajo su responsabilidad</li>
-      <li>No usar la app con fines comerciales de diagnóstico veterinario profesional</li>
-      <li>No intentar replicar, descompilar o distribuir el contenido de la app</li>
-    </ul>
-
-    <h3>5. Suscripción Pro</h3>
-    <p>La suscripción Pro se cobra mensualmente a través de Google Play. Podés cancelar en cualquier momento desde la configuración de tu cuenta de Google Play. No se realizan reembolsos por períodos parciales.</p>
-
-    <h3>6. Tecnología de IA</h3>
-    <p>Vet-AI utiliza la API de Groq con el modelo Meta Llama 4 para el procesamiento de análisis. El rendimiento y disponibilidad del servicio depende en parte de servicios de terceros.</p>
-
-    <h3>7. Modificaciones</h3>
-    <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. El uso continuado de la app constituye aceptación de los nuevos términos.</p>
-
-    <h3>8. Ley aplicable</h3>
-    <p>Estos términos se rigen por las leyes de la República Argentina.</p>
-
-    <h3>9. Contacto</h3>
-    <p>Para consultas: <strong>vetai.soporte@gmail.com</strong></p>
-  </div>
-
+<div class="lang-switcher">
+  <a href="#es">🇦🇷 Español</a>
+  <a href="#en">🇺🇸 English</a>
 </div>
 
-<footer>
-  <p>© 2026 Vet-AI · Todos los derechos reservados · vetai.soporte@gmail.com</p>
-</footer>
+<!-- ═══════════════════════════════════════ ESPAÑOL ═══════════════════════════════════════ -->
+<div class="container" id="es">
+  <div class="logo">🦎 Vet-AI</div>
+  <div class="subtitle">Aplicación de salud para mascotas exóticas</div>
 
-<script>
-function show(section, link) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-  document.getElementById(section).classList.add('active');
-  link.classList.add('active');
-  return false;
-}
-</script>
+  <h1>Política de Privacidad</h1>
+  <div class="updated">Última actualización: Junio 2026</div>
+
+  <div class="warning-box">
+    ⚠️ Los análisis de Vet-AI son orientativos y no reemplazan el diagnóstico de un veterinario profesional habilitado.
+  </div>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>Vet-AI es una aplicación desarrollada de forma independiente. Para consultas sobre privacidad contactá a: <a href="mailto:vetai.soporte@gmail.com">vetai.soporte@gmail.com</a></p>
+
+  <h2>2. Datos que recopilamos</h2>
+  <p>Vet-AI almacena los siguientes datos <strong>localmente en tu dispositivo</strong>:</p>
+  <ul>
+    <li>Nombre y datos de tus mascotas (especie, edad, peso, notas)</li>
+    <li>Fotos de perfil de tus mascotas</li>
+    <li>Historial de análisis realizados</li>
+    <li>Configuración de notificaciones</li>
+    <li>Estado de suscripción Pro</li>
+  </ul>
+  <p>No recopilamos ni almacenamos datos personales del usuario (nombre, email, teléfono) en nuestros servidores.</p>
+
+  <h2>3. Imágenes enviadas para análisis</h2>
+  <p>Las imágenes que enviás para análisis son procesadas por la API de Groq (Meta Llama 4). Estas imágenes son transmitidas de forma segura mediante HTTPS y no son almacenadas por Vet-AI en ningún servidor propio.</p>
+  <p>Para conocer la política de privacidad de Groq, visitá: <a href="https://groq.com/privacy-policy" target="_blank">groq.com/privacy-policy</a></p>
+
+  <h2>4. Almacenamiento local</h2>
+  <p>Todos tus datos (mascotas, historial, configuración) se almacenan exclusivamente en el almacenamiento local de tu dispositivo usando SQLite y AsyncStorage. Si desinstalás la app, todos los datos serán eliminados permanentemente.</p>
+
+  <h2>5. Notificaciones</h2>
+  <p>Si habilitás los recordatorios, la app solicita permiso para enviar notificaciones locales a tu dispositivo. No enviamos notificaciones push remotas.</p>
+
+  <h2>6. Suscripción Pro</h2>
+  <p>Los pagos de la suscripción Pro son procesados por Google Play. Vet-AI no accede ni almacena datos de tarjetas de crédito u otros métodos de pago.</p>
+
+  <h2>7. Herramientas de diagnóstico y rendimiento (Sentry)</h2>
+  <p>Para garantizar la estabilidad y el correcto funcionamiento de la aplicación, utilizamos <strong>Sentry</strong> (operado por Functional Software, Inc.), una herramienta de monitoreo de errores y análisis de rendimiento.</p>
+  <div class="sentry-box">
+    <h3>Datos recopilados por Sentry</h3>
+    <p>Cuando la aplicación experimenta un fallo técnico, Sentry recopila automáticamente:</p>
+    <ul>
+      <li>Registros de fallos y trazas del código (Stack Traces)</li>
+      <li>Información técnica del dispositivo (modelo, versión de Android, memoria libre, orientación de pantalla)</li>
+      <li>Un identificador de instalación único generado de forma aleatoria por el SDK</li>
+    </ul>
+    <p style="margin-top:10px;"><strong>Privacidad:</strong> Este identificador es aleatorio y no está vinculado a ningún dato personal. Nuestra app no solicita ni almacena nombres, correos electrónicos ni credenciales. Sentry procesa estos datos únicamente como procesador de datos bajo nuestras instrucciones y no los comparte ni comercializa con terceros.</p>
+    <p style="margin-top:8px;"><strong>Finalidad:</strong> Mejorar la estabilidad de la app, corregir errores de forma proactiva y asegurar la experiencia del usuario.</p>
+    <p style="margin-top:8px;">Para más información: <a href="https://sentry.io/privacy/" target="_blank">sentry.io/privacy</a></p>
+  </div>
+
+  <h2>8. Publicidad</h2>
+  <p>Vet-AI no muestra publicidad ni comparte datos con redes publicitarias.</p>
+
+  <h2>9. Menores de edad</h2>
+  <p>Vet-AI no está dirigida a menores de 13 años. No recopilamos conscientemente datos de menores.</p>
+
+  <h2>10. Cambios en esta política</h2>
+  <p>Podemos actualizar esta política ocasionalmente. Te notificaremos sobre cambios significativos mediante una actualización de la app.</p>
+
+  <h2>11. Contacto</h2>
+  <div class="contact-box">
+    Para cualquier consulta sobre privacidad escribinos a: <a href="mailto:vetai.soporte@gmail.com">vetai.soporte@gmail.com</a>
+  </div>
+</div>
+
+<hr class="section-divider" />
+
+<!-- ═══════════════════════════════════════ ENGLISH ═══════════════════════════════════════ -->
+<div class="container" id="en">
+  <div class="logo">🦎 Vet-AI</div>
+  <div class="subtitle">Exotic pet health application</div>
+
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: June 2026</div>
+
+  <div class="warning-box">
+    ⚠️ Vet-AI analyses are for guidance only and do not replace the diagnosis of a licensed professional veterinarian.
+  </div>
+
+  <h2>1. Data Controller</h2>
+  <p>Vet-AI is an independently developed application. For privacy inquiries, contact us at: <a href="mailto:vetai.soporte@gmail.com">vetai.soporte@gmail.com</a></p>
+
+  <h2>2. Data We Collect</h2>
+  <p>Vet-AI stores the following data <strong>locally on your device</strong>:</p>
+  <ul>
+    <li>Your pets' names and data (species, age, weight, notes)</li>
+    <li>Profile photos of your pets</li>
+    <li>Analysis history</li>
+    <li>Notification settings</li>
+    <li>Pro subscription status</li>
+  </ul>
+  <p>We do not collect or store personal user data (name, email, phone number) on our servers.</p>
+
+  <h2>3. Images Sent for Analysis</h2>
+  <p>Images you send for analysis are processed by the Groq API (Meta Llama 4). These images are transmitted securely via HTTPS and are not stored by Vet-AI on any of our own servers.</p>
+  <p>To learn about Groq's privacy policy, visit: <a href="https://groq.com/privacy-policy" target="_blank">groq.com/privacy-policy</a></p>
+
+  <h2>4. Local Storage</h2>
+  <p>All your data (pets, history, settings) is stored exclusively in your device's local storage using SQLite and AsyncStorage. If you uninstall the app, all data will be permanently deleted.</p>
+
+  <h2>5. Notifications</h2>
+  <p>If you enable reminders, the app requests permission to send local notifications to your device. We do not send remote push notifications.</p>
+
+  <h2>6. Pro Subscription</h2>
+  <p>Pro subscription payments are processed by Google Play. Vet-AI does not access or store credit card or other payment method data.</p>
+
+  <h2>7. Diagnostics and Performance Tools (Sentry)</h2>
+  <p>To ensure the stability and correct operation of the application, we use <strong>Sentry</strong> (operated by Functional Software, Inc.), an error monitoring and performance analysis tool.</p>
+  <div class="sentry-box">
+    <h3>Data Collected by Sentry</h3>
+    <p>When the application experiences a technical failure, Sentry automatically collects:</p>
+    <ul>
+      <li>Crash logs and code stack traces</li>
+      <li>Technical device information (model, Android version, free memory, screen orientation)</li>
+      <li>A randomly generated installation-specific identifier created by the SDK</li>
+    </ul>
+    <p style="margin-top:10px;"><strong>Privacy:</strong> This identifier is random and is not linked to any personal data. Our app does not request or store names, email addresses, or credentials. Sentry processes this data solely as a data processor under our instructions and does not share or sell it to third parties.</p>
+    <p style="margin-top:8px;"><strong>Purpose:</strong> To improve app stability, proactively fix errors, and ensure a quality user experience.</p>
+    <p style="margin-top:8px;">For more information: <a href="https://sentry.io/privacy/" target="_blank">sentry.io/privacy</a></p>
+  </div>
+
+  <h2>8. Advertising</h2>
+  <p>Vet-AI does not display advertising or share data with advertising networks.</p>
+
+  <h2>9. Minors</h2>
+  <p>Vet-AI is not directed at children under 13 years of age. We do not knowingly collect data from minors.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this policy occasionally. We will notify you of significant changes through an app update.</p>
+
+  <h2>11. Contact</h2>
+  <div class="contact-box">
+    For any privacy inquiries, contact us at: <a href="mailto:vetai.soporte@gmail.com">vetai.soporte@gmail.com</a>
+  </div>
+</div>
 
 </body>
 </html>
